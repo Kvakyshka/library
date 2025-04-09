@@ -1,0 +1,188 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+}
+
+/* Шапка сайта */
+.header {
+  background-color: #34495e;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .left-header a,
+.header .right-header a {
+  color: white;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.header .left-header a:hover,
+.header .right-header a:hover {
+  color: #1abc9c;
+}
+
+
+/* Стили для главного контента */
+.content {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #7f8c8d;
+}
+
+.main-image {
+  width: 70%;
+  max-width: 800px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.catalog-button {
+  background-color: #1abc9c;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.catalog-button:hover {
+  background-color: #16a085;
+}
+
+/* Стили для подвала */
+.footer {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+  color: #1abc9c;
+}
+
+/* Стили для адаптивности */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .content h1 {
+    font-size: 28px;
+  }
+
+  .main-image {
+    width: 100%;
+  }
+
+  .catalog-button {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+/* Стили для корзины */
+table {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f9;
+}
+
+.delete {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background-color: darkred;
+}
+
+.order {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.order:hover {
+  background-color: darkgreen;
+}
+
+.empty-cart-message {
+  text-align: center;
+  font-size: 20px;
+  color: #e74c3c;
+  margin-top: 50px;
+}
+
+.empty-cart-message a {
+  display: inline-block;
+  background-color: #1abc9c;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.empty-cart-message a:hover {
+  background-color: #16a085;
+}
